@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    font-family: "calibri";
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section{
+    min-width: 1000px;
+    margin: auto;
+    padding: 30px 0; 
+}
+
+section h1{
+    font-size: 100px;
+}
+
+.conte{
+    text-align: center;
+}
+
+.conte p{
+    font-size: 70px;
+    font-weight: bold;
+    margin: 1.999em;
+}
+
+.conte a{
+    color: white;
+    text-decoration: none;
+    background: #8BC34A;
+    padding: 6px 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    margin: 10px;
+}

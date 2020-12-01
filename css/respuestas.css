@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bree Serif', serif;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.button{
+    background: rgb(0, 255, 200);
+    color: rgb(5, 1, 1);
+    display: inline-block;
+    font-size: 1.25em;
+    margin: 20px;
+    padding: 10px 10px;
+    text-align: center;
+    width: 450px;
+    text-decoration: none;
+    box-shadow: 0px 3px 0px rgb(15, 95, 51);
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.titulo{
+    color: rgb(12, 105, 74);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.subtitulo{
+    color:  rgb(12, 105, 74);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+header{
+    width: 100%;
+    height: 650px;
+    background: #DCE35B;  
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: white;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    color: white;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.preguntas{
+    background: #f2f2f2;
+}
+
+.galeria-preg{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-preg{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-preg > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(0, 0%, 0%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria h3{
+    color: rgb(234, 250, 10);
+}
+
+.hover-galeria p{
+    color: white;
+}
+
+.imagen-preg:hover .hover-galeria{
+    transform: scale(1);
+}
